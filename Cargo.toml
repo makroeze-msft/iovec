@@ -17,4 +17,4 @@ categories = ["no-std", "network-programming", "api-bindings"]
 libc   = "0.2.3"
 
 [target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3", features = ["minwindef", "ws2def"] }
+winapi = {path = "../winapi-rs", features = ["minwindef", "ws2def"]}
